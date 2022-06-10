@@ -11,11 +11,11 @@ class Fighter {
     }
 
     getDamage() {
-        return this.strength + this.weapon;
+        return this.weapon ? this.strength + this.weapon.damage : this.strength ;
     }
 
     getDefense() {
-        return this.dexterity + this.shield;
+        return this.shield ? this.dexterity + this.shield.protection : this.dexterity;
     }
 
     // Launch a fight

@@ -2,11 +2,11 @@ const Fighter = require("./src/Fighter.js");
 const Weapon = require("./src/Weapon.js");
 const Shield = require("./src/Shield.js");
 
-const epee = new Weapon("Épée", 10);
-const bouclier = new Shield("Bouclier", 10)
+const epee = new Weapon("Épée");
+const bouclier = new Shield("Bouclier")
 
 /** Create Heracles  */
-const heracles = new Fighter("🧔 Heracles", 20, 6, epee.damage, bouclier.protection );
+const heracles = new Fighter("🧔 Heracles", 20, 6, epee, bouclier);
 
 
 /** Create the opponent  */
@@ -56,4 +56,3 @@ const score = (fighter1, fighter2) => {
   console.log(`🏆 ${result.winner.name} wins (💙 ${result.winner.life} )`);
 }
 
-heracles.fight(boar);
