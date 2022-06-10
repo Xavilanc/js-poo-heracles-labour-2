@@ -6,8 +6,7 @@ const epee = new Weapon("Épée", 10);
 const bouclier = new Shield("Bouclier", 10)
 
 /** Create Heracles  */
-const heracles = new Fighter("🧔 Heracles", 20, 6, epee, bouclier );
-
+const heracles = new Fighter("🧔 Heracles", 20, 6, epee.damage, bouclier.protection );
 
 
 /** Create the opponent  */
